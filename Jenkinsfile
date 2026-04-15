@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/Chandrika131005/Shopping-cart'
+                git branch: 'main', url: 'https://github.com/Chandrika131005/Shopping-cart'
             }
         }
 
