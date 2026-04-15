@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/your-repo/shopping-cart.git'
+                git 'https://github.com/Chandrika131005/Shopping-cart'
             }
         }
 
@@ -23,13 +23,13 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t your-dockerhub/cart-app .'
+                bat 'docker build -t 23mis0200/cart-app .'
             }
         }
 
         stage('Docker Push') {
             steps {
-                bat 'docker push your-dockerhub/cart-app'
+                bat 'docker push 23mis0200/cart-app'
             }
         }
 
